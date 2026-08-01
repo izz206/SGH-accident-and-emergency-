@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Integrative Patient Register</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<article class="container" >
+    <section class="erha">
+        <h3 class="ERHA" >EASTERN REGIONAL HEALTH AUTHORITY</h3>
+        <H3 class="SGH" >SANGRE GRANDE HOSPITAL / DISTRICT HOSPITAL</H3>
+
+        <!-------------------------------------------------------header------------------------------------------------>
+
+        <form>
+            <label for="arrival-date"></label>
+            <input type="datetime-local" name="arrival-date" id="arrival-date" placeholder="arrival-date" required>
+
+            <label for="arrival-mode"></label>
+            <input type="text" name="arrival-mode" id="arrival-mode" placeholder="arrival-mode" required>
+
+            <label for="location"></label>
+            <input type="text" name="location" id="location" placeholder="location" required>
+
+            <label for="record-number"></label>
+            <input type="number" name="record-number" id="record-number" placeholder="record-number" required>
+        </form>
+    </section>
+
+    <!------------------------------------------------------demographic info------------------------------------------->
+
+    <section class="demographics">
+        <form>
+            <label for="last-name"></label>
+            <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+
+            <label for="first-name"></label>
+            <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+        </form>
+    </section>
+
+    <!------------------------------------------------triage doctor entry---------------------------------------------->
+
+    <section>
+        <form action="">
+            <label for="triage-time">Triaged at:</label>
+            <input type="datetime-local" name="triage-time" id="triage-time" placeholder="triage-time" required>
+
+            <label for="triage-doctor">Triage Doctor</label>
+            <textarea name="triage-doctor" id="triage-doctor" cols="50" rows="10"></textarea>
+        </form>
+    </section>
+
+    <!----------------------------------------------------------history------------------------------------------------>
+
+    <section class="history" >
+        <form action="">
+            <div class="pc">
+                <label for="PC">PC:</label>
+                <textarea name="text" id="PC" rows="8" cols="40"></textarea>
+            </div>
+
+            <div class="hpc">
+                <label for="history">HPC:</label>
+            <textarea name="text" id="history" rows="17" cols="150"></textarea>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <div>
+            <form action="">
+                <label for="exam">EXAM</label>
+                <textarea name="exam" id="exam" cols="60" rows="10"></textarea>
+            </form>
+        </div>
+    </section>
+    <section class="diagnosis">
+        <section class="ddx">
+            <form action="">
+                <label for="differentials">Differentials:</label>
+                <textarea id="differentials" name="differentials" rows="8" cols="50" required ></textarea>
+            </form>
+        </section>
+
+        <!-----------------------------------------------------plan---------------------------------------------------->
+
+        <section class="Plan" >
+            <form action="">
+                <label for="plan">Plan:</label>
+                <textarea id="plan" name="plan" rows="12" cols="100" required ></textarea>
+            </form>
+        </section>
+        <section class="disposition" ></section>
+        <section class="handover" ></section>
+        <section class="discharge" ></section>
+        <section class="instructions" ></section>
+
+    </section>
+</article>
+</body>
+</html>

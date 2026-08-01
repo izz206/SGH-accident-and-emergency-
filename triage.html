@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intergrative Patient Register</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<section class="nurse-triage" >
+  <div class="header" >
+    <h2>SANGRE GRANDE HOSPITAL</h2>
+
+    <form action="">
+      <label for="arrival-date">Arrival Date & Time</label>
+      <input type="datetime-local" name="arrival-date" id="arrival-date" placeholder="arrival-date" required>
+
+      <label for="triage-time">Triage time</label>
+      <input type="time" name="triage-time" id="triage-time" placeholder="triage-time" required>
+
+      <label for="record-number"></label>
+      <input type="number" name="record-number" id="record-number" placeholder="record-number" required>
+
+      <label for="patient-name">Name</label>
+      <input type="text" name="patient-name" id="patient-name" placeholder="patient-name" required>
+
+      <label for="date">Date of birth</label>
+      <input type="date" name="date-of-birth" id="date" required>
+
+      <label for="gender">Gender</label>
+      <input typeof="gender" name="gender"  id="gender" required>
+
+
+    </form>
+  </div>
+  <section class="triage-entry" >
+      <div class="triage-complaint" >
+        <div class="triage-level">
+          <form action="">
+            <label for="triage-level">Triage level</label>
+            <input type="number" name="triage-level" id="triage-level" placeholder="triage-level" max="5" min="1" style="width: 100px">
+
+            <label for="NAWC">NAWC</label>
+            <input type="datetime-local" id="NAWC" name="NAWC" placeholder="NAWC" >
+          </form>
+        </div>
+        <div class="pain-scale">
+          <form action="">
+            <h3>Pain Scale</h3>
+            <label for="pain-scale-1">1</label>
+            <input type="checkbox" id="pain-scale-1" name="pain-scale" required>
+            <label for="pain-scale-2">2</label>
+            <input type="checkbox" id="pain-scale-2" name="pain-scale" required>
+            <label for="pain-scale-3">3</label>
+            <input type="checkbox" id="pain-scale-3" name="pain-scale" required>
+            <label for="pain-scale-4">4</label>
+            <input type="checkbox" id="pain-scale-4" name="pain-scale" required>
+            <label for="pain-scale-5">5</label>
+            <input type="checkbox" id="pain-scale-5" name="pain-scale" required>
+            <label for="pain-scale-6">6</label>
+            <input type="checkbox" id="pain-scale-6" name="pain-scale" required>
+            <label for="pain-scale-7">7</label>
+            <input type="checkbox" id="pain-scale-7" name="pain-scale" required>
+            <label for="pain-scale-8">8</label>
+            <input type="checkbox" id="pain-scale-8" name="pain-scale" required>
+            <label for="pain-scale-9">9</label>
+            <input type="checkbox" id="pain-scale-9" name="pain-scale" required>
+            <label for="pain-scale-10">10</label>
+            <input type="checkbox" id="pain-scale-10" name="pain-scale" required>
+          </form>
+        </div>
+        <div class="initial-complaint">
+          <form action="">
+            <label for="presenting-problem">Presenting Problem</label>
+            <textarea name="presenting-problem" id="presenting-problem" cols="50" rows="10"></textarea>
+          </form>
+        </div>
+      </div>
+
+      <article class="vitals" >
+        <div class="BP">
+          <form action="">
+            <label for="bloodpressure">BP</label>
+            <textarea name="bp" id="bloodpressure" cols="6" rows="4"></textarea>
+          </form>
+        </div>
+        <div class="Pulse">
+          <form action="">
+            <label for="pulse">Pulse</label>
+            <textarea name="bp" id="pulse" cols="6" rows="4"></textarea>
+          </form>
+        </div>
+        <div class="temp">
+          <form action="">
+            <label for="temp">Temp</label>
+            <textarea name="bp" id="temp" cols="6" rows="4"></textarea>
+          </form>
+        </div>
+        <div class="resp">
+          <form action="">
+            <label for="resp">Resp</label>
+            <textarea name="bp" id="resp" cols="6" rows="4"></textarea>
+          </form>
+        </div>
+        <div class="Spo2">
+          <form action="">
+            <label for="oxygen">Spo2</label>
+            <textarea name="bp" id="oxygen" cols="6" rows="4"></textarea>
+          </form>
+        </div>
+        <div class="RBS">
+          <form action="">
+            <label for="rbs">RBS</label>
+            <textarea name="bp" id="rbs" cols="6" rows="4"></textarea>
+          </form>
+        </div>
+        <div class="Urinalysis">
+          <form action="">
+            <label for="urine">Urinalysis</label>
+            <textarea name="bp" id="urine" cols="6" rows="4"></textarea>
+          </form>
+        </div>
+        <div class="UPT">
+          <form action="">
+            <label for="upt">UPT</label>
+            <textarea name="bp" id="upt" cols="6" rows="4"></textarea>
+          </form>
+        </div>
+      </article>
+
+  </section>
+
+  <section class="medical-background" ></section>
+  <section class="screening" ></section>
+  <section class="consent" ></section>
+</section>
+
+
+</body>
+</html>
