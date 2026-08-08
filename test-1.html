@@ -3,63 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<article>
-  <!------------------------------------------------------demographic info------------------------------------------->
- <h2>SANGRE GRANDE HOSPITAL</h2>
-    <section class="demographics">
-        <form action="" class="demographics-form">
-            <label for="arrival-date">Arrival Date & Time</label>
-            <input type="datetime-local" name="arrival-date" id="arrival-date" placeholder="arrival-date" required>
-
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" required>
-
-            <label for="first-name">First name</label>
-            <input type="text" name="first-name" id="first-name"  required>
-
-            <label for="date of birth">Date of Birth</label>
-            <input type="date" name="date of birth" id="date of birth" required>
-
-            <label for="age">Age</label>
-            <input type="number" name="age" id="age" required>
-
-            <label for="address">Address</label>
-            <textarea name="address" id="address" cols="50" rows="1" placeholder="Address"></textarea>
-
-            <label for="record-number">Record number</label>
-            <input type="number" name="record-number" id="record-number" required>
-
-            <label for="phone-contact">Phone Contact</label>
-            <input type="number" name="phone-contact" id="phone-contact" required>
-
-            <label for="next-of-kin">Next of Kin</label>
-            <input type="text" name="next-of-kin" id="next-of-kin" required>
-
-            <label for="NOK-contact">NOK contact</label>
-            <input type="number" name="NOK-contact" id="NOK-contact" required>
-
-             <label for="emergency">In case of Emergency</label>
-            <input type="text" name="emergency" id="emergency" required>
-
-             <label for="emergency-contact">Emergency Contact</label>
-            <input type="number" name="emergency-contact" id="emergency-contact" required>
-        </form>
-    </section>
-</article>
-
-<!------------------------------------------nurse triage--------------------------------------------------------------->
-
 <section class="nurse-triage" >
+  <div class="header" >
+    <h2>SANGRE GRANDE HOSPITAL</h2>
+
+    <form action="">
+      <label for="arrival-date">Arrival Date & Time</label>
+      <input type="datetime-local" name="arrival-date" id="arrival-date" placeholder="arrival-date" required>
+
+      <label for="triage-time">Triage time</label>
+      <input type="time" name="triage-time" id="triage-time" placeholder="triage-time" required>
+
+      <label for="record-number"></label>
+      <input type="number" name="record-number" id="record-number" placeholder="record-number" required>
+
+      <label for="patient-name">Name</label>
+      <input type="text" name="patient-name" id="patient-name" placeholder="patient-name" required>
+
+      <label for="date">Date of birth</label>
+      <input type="date" name="date-of-birth" id="date" required>
+
+      <label for="gender">Gender</label>
+      <input typeof="gender" name="gender"  id="gender" required>
+
+
+    </form>
+  </div>
   <section class="triage-entry" >
       <div class="triage-complaint" >
         <div class="triage-level">
           <form action="">
-            <label for="nurse-triage-time">Nurse Triage time</label>
-            <input type="time" name="nurse-triage-time" id="nurse-triage-time" placeholder="nurse-triage-time" required>
-
             <label for="triage-level">Triage level</label>
             <input type="number" name="triage-level" id="triage-level" placeholder="triage-level" max="5" min="1" style="width: 100px">
 
@@ -99,7 +75,6 @@
           </form>
         </div>
       </div>
-<!-----------------------------------------------------------vitals---------------------------------------------------->
 
       <article class="vitals" >
         <div class="BP">
@@ -151,8 +126,9 @@
           </form>
         </div>
       </article>
+
   </section>
-<!-------------------------------------------------medical background-------------------------------------------------->
+
   <section class="medical-background" >
       <article class="part1">
         <form action="">
@@ -224,15 +200,74 @@
   </section>
 </section>
 
-<!------------------------------------------------triage doctor entry---------------------------------------------->
-<br><br><br><br><br><br>
+<!-----------------------------patient registration------------------------------------>
+
+<article class="container" >
+    <section class="erha">
+        <h3 class="ERHA" >EASTERN REGIONAL HEALTH AUTHORITY</h3>
+        <h3 class="SGH" >SANGRE GRANDE HOSPITAL / DISTRICT HOSPITAL</h3>
+
+        <!-------------------------------------------------------header------------------------------------------------>
+
+        <form>
+            <label for="arrival-date"></label>
+            <input type="datetime-local" name="arrival-date" id="arrival-date" placeholder="arrival-date" required>
+
+            <label for="arrival-mode"></label>
+            <input type="text" name="arrival-mode" id="arrival-mode" placeholder="arrival-mode" required>
+
+            <label for="location"></label>
+            <input type="text" name="location" id="location" placeholder="location" required>
+
+            <label for="record-number"></label>
+            <input type="number" name="record-number" id="record-number" placeholder="record-number" required>
+        </form>
+    </section>
+
+    <!------------------------------------------------------demographic info------------------------------------------->
+
+    <section class="demographics">
+        <form>
+            <label for="last-name"></label>
+            <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+
+            <label for="first-name"></label>
+            <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+
+            <label for="date of birth"></label>
+            <input type="date" name="date of birth" id="date of birth" placeholder="date of birth" required>
+
+            <label for="age"></label>
+            <input type="number" name="age" id="age" placeholder="age" required>
+
+            <label for="address"></label>
+            <textarea name="address" id="address" cols="50" rows="1"></textarea>
+
+            <label for="phone-contact"></label>
+            <input type="number" name="phone-contact" id="phone-contact" placeholder="phone-contact" required>
+
+            <label for="next-of-kin"></label>
+            <input type="text" name="next-of-kin" id="next-of-kin" placeholder="next of kin" required>
+
+            <label for="NOK-contact"></label>
+            <input type="number" name="NOK-contact" id="NOK-contact" placeholder="Next of kin contact" required>
+
+             <label for="emergency"></label>
+            <input type="text" name="emergency" id="emergency" placeholder="In case of Emergency" required>
+
+             <label for="emergency-contact"></label>
+            <input type="number" name="emergency-contact" id="emergency-contact" placeholder="Emergency contact" required>
+
+        </form>
+    </section>
+
+    <!------------------------------------------------triage doctor entry---------------------------------------------->
+
     <section>
         <form action="">
             <label for="triage-time">Triaged at:</label>
             <input type="datetime-local" name="triage-time" id="triage-time" placeholder="triage-time" required>
-        </form>
-        <br><br>
-        <form action="">
+
             <label for="triage-doctor">Triage Doctor</label>
             <textarea name="triage-doctor" id="triage-doctor" cols="50" rows="10"></textarea>
         </form>
@@ -282,5 +317,9 @@
         <section class="handover" ></section>
         <section class="discharge" ></section>
         <section class="instructions" ></section>
+
+    </section>
+</article>
+
 </body>
 </html>
