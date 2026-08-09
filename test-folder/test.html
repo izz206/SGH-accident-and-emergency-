@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple JS Form</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        .form-group { margin-bottom: 15px; }
+        #message { color: green; font-weight: bold; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <h2>Simple JavaScript Form</h2>
+
+    <!-- 1. The HTML Form Structure -->
+    <form class="myForm">
+        <div class="form-group">
+            <label for="username">Name:</label>
+            <input type="text" id="username" required>
+        </div>
+        <button type="submit">Submit Form</button>
+    </form>
+
+    <!-- UI element to display success message -->
+    <p id="message"></p>
+
+    <!-- 2. The JavaScript Implementation -->
+    <script src="script.js"></script>
+
+</body>
+</html>
